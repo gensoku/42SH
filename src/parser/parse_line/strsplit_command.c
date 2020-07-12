@@ -69,9 +69,7 @@ char			**strsplit_command(char *str, t_env *e)
 {
 	t_comp		*list_elem;
 	char		**new;
-	int			i;
 
-	i = 0;
 	if (!str)
 		return (NULL);
 	built_history__catch(str);

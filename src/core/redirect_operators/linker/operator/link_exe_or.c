@@ -14,9 +14,6 @@
 
 void			run_or(t_token *node, char *save, t_env *e)
 {
-	t_token *tmp;
-
-	tmp = node->next;
 	exec_tok(save ? save : node->first, e, 1);
 	wait_pgid(e->tmp_pgid, e, 0);
 	resume_state(e, 2, NULL);

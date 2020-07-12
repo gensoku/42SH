@@ -54,10 +54,8 @@ static	int		norm_la_pars(char *str, int x, t_parser *tf, int ret)
 int				parser_l_agreg_(char *str, int x, t_parser *tf)
 {
 	int			ret;
-	int			z;
 
 	ret = 0;
-	z = 0;
 	if (str[x] == ' ')
 		return (norm_la_pars(str, x, tf, ret));
 	else if (x == 0 && str[x] == '<')

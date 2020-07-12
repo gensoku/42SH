@@ -28,13 +28,11 @@ char	*ft_get_file(char *path, int fd)
 {
 	char	*ret;
 	char	buff[BUFF_SIZE + 1];
-	int		cur_fd;
 	char	*tmp;
 
 	ret = NULL;
 	if (!path)
 		return (ret);
-	cur_fd = (fd != -1) ? fd : -1;
 	ft_bzero(&buff, BUFF_SIZE + 1);
 	if ((fd = open(path, O_RDONLY, O_SYNC)) != -1)
 	{

@@ -56,7 +56,6 @@ static	char	*loop_match(char **env, char *str, char *lower, char *upper)
 
 char			*get_env(char *str, char **env, int case_sensitive)
 {
-	int			i;
 	char		*ret;
 	char		*lower;
 	char		*upper;
@@ -64,7 +63,6 @@ char			*get_env(char *str, char **env, int case_sensitive)
 	ret = NULL;
 	if (!env || !str)
 		return (NULL);
-	i = -1;
 	lower = (case_sensitive) ? NULL : ft_strdup(str);
 	upper = (case_sensitive) ? NULL : ft_strdup(str);
 	ft_str_tolower(lower);

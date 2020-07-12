@@ -25,8 +25,6 @@ void			checks_tild(char *str, t_env *e, char **to_free)
 	char		*tmp;
 	char		*tmp2;
 
-	if (!str)
-		;
 	if (str[0] && str[0] == '~')
 	{
 		tmp = get_env("HOME", e->env, 1);

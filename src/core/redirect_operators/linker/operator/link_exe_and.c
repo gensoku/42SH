@@ -14,9 +14,6 @@
 
 void			run_and(t_token *node, char *save, t_env *e)
 {
-	t_token *tmp;
-
-	tmp = node->next;
 	if (node->next && check_type_redir(node) && e->last_status != 0)
 		;
 	else

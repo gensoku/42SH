@@ -88,7 +88,6 @@ static	void		syn_print_tok(char *line, int i, int k, int flags)
 void				checks_syn_col(t_env *e, char *arg, t_cursor save, int opts)
 {
 	char			*line;
-	int				i;
 	t_cursor		real_save;
 
 	real_save = save;
@@ -99,7 +98,6 @@ void				checks_syn_col(t_env *e, char *arg, t_cursor save, int opts)
 	move_home(e);
 	tputs(tgetstr("cd", NULL), 1, spec_put);
 	syn_print_tok(line, -1, 0, 0);
-	i = ft_strlen(line);
 	e->cursor->col = real_save.col;
 	e->cursor->row = real_save.row;
 	e->cursor->total = real_save.total;

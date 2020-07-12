@@ -15,10 +15,8 @@
 static int		implode_norm(char **tab1)
 {
 	int			max;
-	int			i;
 
 	max = 0;
-	i = 0;
 	while (*tab1)
 	{
 		max += ft_strlen(*tab1) + 1;

@@ -15,10 +15,8 @@
 static int		still_running(pid_t pgid, t_env *e)
 {
 	t_childs	*tmp;
-	t_childs	*b_tmp;
 
 	tmp = e->childs;
-	b_tmp = e->childs;
 	while (tmp)
 	{
 		if (tmp->grpid == pgid)

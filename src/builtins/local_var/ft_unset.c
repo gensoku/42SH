@@ -14,12 +14,10 @@
 
 static char				*is_a_tab_part(char *key, char *to_cmp)
 {
-	char				*tmp;
 	int					i;
 	int					j;
 	char				*ret;
 
-	tmp = NULL;
 	i = ft_strlen(key);
 	if (!key || !to_cmp || ft_strncmp(key, to_cmp, i))
 		return (NULL);

@@ -105,11 +105,9 @@ int		ft_option(char **option)
 void	ft_echo(char **argv, t_env *e)
 {
 	int		opt;
-	int		i;
 	char	**ptr;
 
 	opt = 0;
-	i = 0;
 	(void)e;
 	ptr = argv;
 	if (ptr[1] && ptr[1][0] == '-')

@@ -100,7 +100,6 @@ static void			remove_bs(t_comp *tmp)
 t_comp				*backslash_lst(t_comp *lst)
 {
 	t_comp			*tmp;
-	t_comp			*tmp2;
 	t_comp			*head;
 
 	if (!lst)
@@ -115,7 +114,6 @@ t_comp				*backslash_lst(t_comp *lst)
 			continue ;
 		}
 		remove_bs(tmp);
-		tmp2 = tmp;
 		tmp = tmp->next;
 	}
 	return (head);
